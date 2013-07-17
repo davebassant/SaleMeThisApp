@@ -3,5 +3,6 @@
 
     <string name="app_name">SaleMeThis</string>
     <string name="action_settings">Settings</string>
+    <string name="wishlist_title">My WishList</string>
 
 </resources>
