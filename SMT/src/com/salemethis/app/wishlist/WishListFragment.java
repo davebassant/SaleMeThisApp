@@ -68,10 +68,10 @@ public class WishListFragment extends ListFragment {
 			nameTextView.setText(d.getName());
 			
 			TextView currPriceTextView = (TextView)convertView.findViewById(R.id.wishlist_item_current_price);
-			currPriceTextView.setText("Current Price: " + d.getCurrentPrice());
+			currPriceTextView.setText("Current Price:\n" + d.getCurrentPrice());
 			
 			TextView savingTextView = (TextView)convertView.findViewById(R.id.wishlist_item_saving);
-			savingTextView.setText("Saving Total: " + d.getSaving());
+			savingTextView.setText("Saving Total:\n" + d.getSaving());
 			
 			ImageView thumbImageView = (ImageView)convertView.findViewById(R.id.wishlist_item_thumb);
 			thumbImageView.setImageResource(d.getThumbId());

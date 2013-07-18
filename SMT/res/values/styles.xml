@@ -17,6 +17,6 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     <color name="Wishlist_Item_Current_Price">#ff0000</color>
-    <color name="Wishlist_Item_Saving">#00FF00</color>
+    <color name="Wishlist_Item_Saving">#00AA00</color>
 
 </resources>
