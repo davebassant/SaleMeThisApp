@@ -2,6 +2,7 @@ package com.salemethis.app.wishlist;
 
 import java.util.ArrayList;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.View;
@@ -12,12 +13,15 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.salemethis.app.R;
+import com.salemethis.app.WishListPagerActivity;
 import com.salemethis.app.dummy_data.DummyItem;
 import com.salemethis.app.dummy_data.DummyItemGenerator;
+import com.salemethis.app.product.ProductFragment;
 
 public class WishListFragment extends ListFragment {
 
-	private static final String TAG = "WishListFragment";
+	//only needed if logging
+//	private static final String TAG = "WishListFragment";
 	
 	private ArrayList<DummyItem> mDummyItems;
 	
@@ -40,12 +44,11 @@ public class WishListFragment extends ListFragment {
 	
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id) {
-//		Crime c = ((CrimeAdapter)getListAdapter()).getItem(position);
-//		Log.d(TAG, c.getTitle() + " was clicked");
-//		
-//		Intent i = new Intent(getActivity(), CrimePagerActivity.class);
-//		i.putExtra(CrimeFragment.EXTRA_CRIME_ID, c.getId());
-//		startActivity(i);
+		DummyItem item = ((DummyItemAdapter)getListAdapter()).getItem(position);
+		
+		Intent i = new Intent(getActivity(), WishListPagerActivity.class);
+		i.putExtra(ProductFragment.EXTRA_ITEM_ID, item.getId());
+		startActivity(i);
 	}
 	
 	private class DummyItemAdapter extends ArrayAdapter<DummyItem> {

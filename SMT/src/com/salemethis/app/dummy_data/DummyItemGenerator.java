@@ -20,42 +20,57 @@ public class DummyItemGenerator {
 		
 		DummyItem d1 = new DummyItem();
 		d1.setName("K-Swiss Arvee 1-5");
+		d1.setMerchant("Schuh");
+		d1.setDescription("Some kickass trainers!");
 		d1.setCurrentPrice("£34.99");
 		d1.setSaving("£25.01 (42%)");
 		d1.setThumbId(R.drawable.thumb1);
 		d1.setFullId(R.drawable.full1);
+		d1.setRatingId(R.drawable.star5);
 		lstDummyItems.add(d1);
 		
 		DummyItem d2 = new DummyItem();
 		d2.setName("SAMSUNG GT-P3110ZWABTU GALAXY TAB 2 7 INCH WIFI 8GB WHITE");
+		d2.setMerchant("Samsung");
+		d2.setDescription("A cool tablet :)");
 		d2.setCurrentPrice("£50.00");
 		d2.setSaving("£25.00 (33%)");
 		d2.setThumbId(R.drawable.thumb2);
 		d2.setFullId(R.drawable.full2);
+		d2.setRatingId(R.drawable.star5);
 		lstDummyItems.add(d2);
 		
 		DummyItem d3 = new DummyItem();
 		d3.setName("Olympus VG-170 Compact Digital Camera - Red, Red");
+		d3.setMerchant("Olympus");
+		d3.setDescription("A camera to take photos with, clicky");
 		d3.setCurrentPrice("£49.99");
 		d3.setSaving("£49.99 (50%)");
 		d3.setThumbId(R.drawable.thumb3);
 		d3.setFullId(R.drawable.full3);
+		d3.setRatingId(R.drawable.star5);
 		lstDummyItems.add(d3);
 		
 		DummyItem d4 = new DummyItem();
 		d4.setName("Sony ICF-DS15iPN Docking System - with Lightning Connector");
+		d4.setMerchant("Sony");
+		d4.setDescription("Lightning, what a joke...");
 		d4.setCurrentPrice("£69.99");
 		d4.setSaving("£30.00 (30%)");
 		d4.setThumbId(R.drawable.thumb4);
 		d4.setFullId(R.drawable.full4);
+		d4.setRatingId(R.drawable.star5);
 		lstDummyItems.add(d4);
 		
 		DummyItem d5 = new DummyItem();
 		d5.setName("HAIER Intelius 500 HW80-BD1626 Washing Machine - White, White");
+		d5.setMerchant("Haier");
+		d5.setDescription("Just another POWM");
 		d5.setCurrentPrice("£799.00");
 		d5.setSaving("£200.00 (20%)");
 		d5.setThumbId(R.drawable.thumb5);
 		d5.setFullId(R.drawable.full5);
+		d5.setRatingId(R.drawable.star5);
 		lstDummyItems.add(d5);
 	}
 	

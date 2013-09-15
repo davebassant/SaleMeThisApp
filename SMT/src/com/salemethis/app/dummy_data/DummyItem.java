@@ -5,12 +5,33 @@ import java.util.UUID;
 public class DummyItem {
 	
 	private UUID mId;
-	private String mName;
-	private String mCurrentPrice;
-	private String mSaving;
-	private int mThumbId;
-	private int mFullId;
+	private String mName, mMerchant, mDescription, mCurrentPrice, mSaving;
+	public String getMerchant() {
+		return mMerchant;
+	}
+
+	public void setMerchant(String merchant) {
+		mMerchant = merchant;
+	}
+
+	public String getDescription() {
+		return mDescription;
+	}
+
+	public void setDescription(String description) {
+		mDescription = description;
+	}
+
+	private int mThumbId, mFullId, mRatingId;
 	
+	public int getRatingId() {
+		return mRatingId;
+	}
+
+	public void setRatingId(int ratingId) {
+		mRatingId = ratingId;
+	}
+
 	public DummyItem() {
 		mId = UUID.randomUUID();
 	}

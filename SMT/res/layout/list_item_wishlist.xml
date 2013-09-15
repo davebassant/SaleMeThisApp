@@ -20,7 +20,7 @@
         android:layout_marginRight="10dp"
         android:layout_toRightOf="@+id/wishlist_item_thumb"
         android:layout_toLeftOf="@+id/wishlist_price_layout"
-        android:text="Product Name"
+        android:text="@string/init_product_name"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <LinearLayout
@@ -35,7 +35,7 @@
             android:id="@+id/wishlist_item_current_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Current Price"
+            android:text="@string/init_current_price"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/Wishlist_Item_Current_Price" />
 
@@ -43,7 +43,7 @@
             android:id="@+id/wishlist_item_saving"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Saving Total (%)"
+            android:text="@string/init_saving_total"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/Wishlist_Item_Saving" />
 
