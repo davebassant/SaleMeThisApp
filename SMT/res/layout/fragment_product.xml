@@ -8,58 +8,110 @@
         android:id="@+id/image_item_full"
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:layout_gravity="center"
         android:src="@drawable/smt_icon" />
 
-    <TextView
-        android:id="@+id/item_name"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/init_product_name" />
+        android:orientation="horizontal" >
 
-    <TextView
-        android:id="@+id/item_merchant"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/init_product_merchant" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/product_view_small_padding" >
+
+            <TextView
+                android:id="@+id/item_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/init_product_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_merchant_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/init_product_merchant"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/product_view_small_padding" >
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/init_product_name" />
+
+            <TextView
+                android:id="@+id/item_merchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/init_product_merchant" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/item_star_rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="right"
         android:src="@drawable/star5" />
 
-    <TextView
-        android:id="@+id/item_current_price"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/init_current_price"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/Wishlist_Item_Current_Price" />
+        android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/item_saving"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/init_saving_total"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/Wishlist_Item_Saving" />
+        <TextView
+            android:id="@+id/item_current_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/product_view_small_padding"
+            android:text="@string/init_current_price"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/Wishlist_Item_Current_Price" />
+
+        <TextView
+            android:id="@+id/item_saving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/product_view_small_padding"
+            android:text="@string/init_saving_total"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/Wishlist_Item_Saving" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_buy_now"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_buy_now" />
 
     <Button
         android:id="@+id/btn_remove_item"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_wishlist_rmv" />
 
     <TextView
         android:id="@+id/item_description"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/product_view_small_padding"
+        android:background="@drawable/basic_border"
+        android:padding="@dimen/product_view_small_padding"
         android:text="@string/init_product_description" />
 
 </LinearLayout>

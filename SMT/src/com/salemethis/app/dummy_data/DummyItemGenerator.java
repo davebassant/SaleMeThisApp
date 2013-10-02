@@ -30,7 +30,7 @@ public class DummyItemGenerator {
 		lstDummyItems.add(d1);
 		
 		DummyItem d2 = new DummyItem();
-		d2.setName("SAMSUNG GT-P3110ZWABTU GALAXY TAB 2 7 INCH WIFI 8GB WHITE");
+		d2.setName("SAMSUNG GALAXY TAB 2 8GB WHITE");
 		d2.setMerchant("Samsung");
 		d2.setDescription("A cool tablet :)");
 		d2.setCurrentPrice("£50.00");
@@ -41,7 +41,7 @@ public class DummyItemGenerator {
 		lstDummyItems.add(d2);
 		
 		DummyItem d3 = new DummyItem();
-		d3.setName("Olympus VG-170 Compact Digital Camera - Red, Red");
+		d3.setName("Olympus VG-170 Red");
 		d3.setMerchant("Olympus");
 		d3.setDescription("A camera to take photos with, clicky");
 		d3.setCurrentPrice("£49.99");
@@ -52,7 +52,7 @@ public class DummyItemGenerator {
 		lstDummyItems.add(d3);
 		
 		DummyItem d4 = new DummyItem();
-		d4.setName("Sony ICF-DS15iPN Docking System - with Lightning Connector");
+		d4.setName("Sony DS15iPN Docking System");
 		d4.setMerchant("Sony");
 		d4.setDescription("Lightning, what a joke...");
 		d4.setCurrentPrice("£69.99");
@@ -63,7 +63,7 @@ public class DummyItemGenerator {
 		lstDummyItems.add(d4);
 		
 		DummyItem d5 = new DummyItem();
-		d5.setName("HAIER Intelius 500 HW80-BD1626 Washing Machine - White, White");
+		d5.setName("HAIER Intelius 500 Washing Machine");
 		d5.setMerchant("Haier");
 		d5.setDescription("Just another POWM");
 		d5.setCurrentPrice("£799.00");
