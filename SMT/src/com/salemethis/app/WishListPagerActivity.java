@@ -29,14 +29,6 @@ public class WishListPagerActivity extends FragmentActivity {
 		
 		mItems = DummyItemGenerator.get(this).getDummyItems();
 		
-		UUID itemId = (UUID)getIntent().getSerializableExtra(ProductFragment.EXTRA_ITEM_ID);
-		for (int i = 0; i < mItems.size(); i++) {
-			if (mItems.get(i).getId().equals(itemId)) {
-				mViewPager.setCurrentItem(i);
-				break;
-			}
-		}
-		
 		FragmentManager fm = getSupportFragmentManager();
 		mViewPager.setAdapter(new FragmentStatePagerAdapter(fm) {
 
@@ -69,5 +61,13 @@ public class WishListPagerActivity extends FragmentActivity {
 				}
 			}
 		});
+		
+		UUID itemId = (UUID)getIntent().getSerializableExtra(ProductFragment.EXTRA_ITEM_ID);
+		for (int i = 0; i < mItems.size(); i++) {
+			if (mItems.get(i).getId().equals(itemId)) {
+				mViewPager.setCurrentItem(i);
+				break;
+			}
+		}
 	}
 }

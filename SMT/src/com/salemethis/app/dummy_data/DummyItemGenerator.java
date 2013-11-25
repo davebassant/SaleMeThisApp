@@ -30,7 +30,7 @@ public class DummyItemGenerator {
 		lstDummyItems.add(d1);
 		
 		DummyItem d2 = new DummyItem();
-		d2.setName("SAMSUNG GALAXY TAB 2 8GB WHITE");
+		d2.setName("SAMSUNG GALAXY TAB 2 8GB WHITE this product has a very long name");
 		d2.setMerchant("Samsung");
 		d2.setDescription("A cool tablet :)");
 		d2.setCurrentPrice("£50.00");
